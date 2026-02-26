@@ -1,46 +1,64 @@
 # Emberflow Skills
 
-Agent skills for publishing beautiful docs from your AI coding tools to [Emberflow](https://supportive-forgiveness-production.up.railway.app).
+Publish beautiful docs from your AI coding tools to [Emberflow](https://supportive-forgiveness-production.up.railway.app) — architecture diagrams, tables, and markdown, hosted instantly.
 
-## Quick Install
+## Install
+
+The fastest way to get started:
 
 ```bash
 npx emberflow-skills
 ```
 
-Auto-detects Claude Code and Cursor projects and installs the skill to the right place.
+That's it. The installer auto-detects your project type (Claude Code or Cursor) and copies the skill to the right directory. You'll be publishing docs in under 10 seconds.
+
+### Options
 
 ```bash
+# Install to current project (default)
+npx emberflow-skills
+
 # Install globally for Claude Code (available in all projects)
 npx emberflow-skills --global
 ```
 
-## Available Skills
+### What the installer does
 
-### `ember-publish`
+1. Detects if you're in a Claude Code project (`.claude/`) or Cursor project (`.cursor/`)
+2. Copies the `ember-publish` skill into your project's skills directory
+3. Done — use `/ember-publish` in your next conversation
 
-Publish markdown documents with Mermaid diagrams, syntax highlighting, tables, and inline comments.
+## Usage
 
-**Usage:** `/ember-publish architecture overview for the payments service`
+In Claude Code or Cursor, just type:
 
-Your AI writes the doc, generates diagrams, and publishes it — you get back a shareable URL.
+```
+/ember-publish architecture overview for the payments service
+```
 
-**Works with:** Claude Code, Cursor, Codex CLI, and any tool that supports the SKILL.md format.
+Your AI writes the markdown, generates Mermaid diagrams, and publishes it. You get back a shareable URL.
 
-## What Emberflow renders
+## What gets published
 
 - Live Mermaid diagrams with zoom, pan, and fullscreen
 - Syntax-highlighted code blocks (190+ languages)
 - Auto-generated table of contents
 - Per-block inline comments and discussions
 - Dark mode with font selection
+- Public or private docs with secret links
 
-## Manual Installation
+## Manual install
 
 If you prefer not to use npx:
 
 ```bash
-# Clone and copy
-git clone https://github.com/toptalPatrick/emberflow-skills.git
+git clone https://github.com/pmccurley87/emberflow-skills.git
 cp -r emberflow-skills/skills/ember-publish .claude/skills/
 ```
+
+## Works with
+
+- Claude Code
+- Cursor
+- Codex CLI
+- Any tool that supports the SKILL.md format
