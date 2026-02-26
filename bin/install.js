@@ -9,7 +9,7 @@ const os = require('os');
 
 const SKILL_NAME = 'ember-publish';
 const SKILL_SRC = path.join(__dirname, '..', 'skills', SKILL_NAME, 'SKILL.md');
-const EMBERFLOW_URL = 'https://supportive-forgiveness-production.up.railway.app';
+const EMBERFLOW_URL = 'https://www.emberflow.ai';
 const TOKEN_PATH = path.join(os.homedir(), '.emberflow', 'token.json');
 
 const dim = (s) => `\x1b[2m${s}\x1b[0m`;

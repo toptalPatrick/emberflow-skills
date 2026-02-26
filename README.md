@@ -1,6 +1,6 @@
 # Emberflow Skills
 
-Publish beautiful docs from your AI coding tools to [Emberflow](https://supportive-forgiveness-production.up.railway.app) — architecture diagrams, tables, and markdown, hosted instantly.
+Publish beautiful docs from your AI coding tools to [Emberflow](https://www.emberflow.ai) — architecture diagrams, tables, and markdown, hosted instantly.
 
 ## Install
 
