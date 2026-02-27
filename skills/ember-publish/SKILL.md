@@ -190,5 +190,5 @@ To **update** an existing document, publish again with the same slug — the API
 curl -s -H "Authorization: Bearer $TOKEN" "$EMBERFLOW_URL/api/docs"
 
 # Delete a document
-curl -s -X DELETE -H "Authorization: Bearer $TOKEN" "$EMBERFLOW_URL/api/docs/<shortId>/<slug>"
+curl -s -X DELETE -H "Authorization: Bearer $TOKEN" "$EMBERFLOW_URL/api/docs/SLUG_HERE"
 ```
